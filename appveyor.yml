@@ -1,0 +1,14 @@
+version: 1.0.{build}
+image: Ubuntu1604
+branches:
+  # whitelist
+  only:
+    - master
+skip_branch_with_pr: true
+install:
+- sh: >-
+    sudo apt-get install hello
+
+build_script:
+- sh: >-
+    echo "ALL DONE"
